@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Maven install') {
+    stage('Maven install windows') {
         when {
             expression {
                 env.OS == 'BAT'
@@ -13,7 +13,7 @@ pipeline {
             }
         }
     }
-    stage('Maven install') {
+    stage('Maven install linux') {
         when {
             expression {
                 env.OS == 'UNIX'

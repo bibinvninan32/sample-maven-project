@@ -1,6 +1,6 @@
 pipeline {
   agent {
-        label 'linux'  // Replace with the label of your Windows node
+        label 'windows'  // Replace with the label of your Windows node
     }
   stages {
   stage('Maven install') {
